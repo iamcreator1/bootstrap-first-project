@@ -1,0 +1,83 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    display: none;
+  }
+
+}
+
+@media (max-width: 992px) {
+  p {
+    margin-right: auto;
+  }
+
+  .desctop-nav {
+    display: none;
+  }
+}
+
+header {
+  .container {
+    p {
+      font-family: '20 Kopeek';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      color: #FFFFFF;
+    }
+
+    .desctop-nav {
+      margin-left: auto;
+
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        align-items: center;
+
+        li {
+
+          & :first-of-type {
+
+            font-family: '20 Kopeek';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #FFFFFF;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.main-banner {
+  background-image: url(../images/main-bannerjpg.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.main-banner {
+  .wrapper-for-buttons {
+    a {
+      background: #FFFFFF;
+      border-radius: 40px;
+      padding: 23px 47px;
+    }
+  }
+
+  article {
+    margin-top: 280px;
+    p {
+      margin-bottom: 65px;
+    }
+  }
+}
