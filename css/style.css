@@ -13,6 +13,10 @@
   }
 }
 
+header {
+  z-index: 9999;
+}
+
 header .container p {
   font-family: '20 Kopeek';
   font-style: normal;
@@ -43,22 +47,30 @@ header .container .desctop-nav ul li :first-of-type {
 }
 
 .main-banner {
+  height: 100vh;
+}
+
+.main-banner .item {
   background-image: url(../images/main-bannerjpg.jpg);
   background-size: cover;
   height: 100vh;
 }
 
-.main-banner .wrapper-for-buttons a {
-  background: #FFFFFF;
-  border-radius: 40px;
-  padding: 23px 47px;
+.main-banner .item.item_2 {
+  background-image: url(../images/banner-2-blue.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 
-.main-banner article {
-  margin-top: 280px;
+.main-banner .item.item_3 {
+  background-image: url(../images/banner-three-white.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 
-.main-banner article p {
-  margin-bottom: 65px;
+.main-banner .item.item_4 {
+  background-image: url(../images/banner-4-beige.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

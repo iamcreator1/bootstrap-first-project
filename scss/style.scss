@@ -1,8 +1,8 @@
-@mixin max-screen($res) {
-  @media screen and (max-width: $res) {
-    @content;
-  }
-}
+// @mixin max-screen($res) {
+//   @media screen and (max-width: $res) {
+//     @content;
+//   }
+// }
 
 @media (min-width: 992px) {
   .navbar-nav {
@@ -22,6 +22,9 @@
 }
 
 header {
+
+  z-index: 9999;
+
   .container {
     p {
       font-family: '20 Kopeek';
@@ -60,24 +63,50 @@ header {
 }
 
 .main-banner {
-  background-image: url(../images/main-bannerjpg.jpg);
-  background-size: cover;
+
   height: 100vh;
-}
 
-.main-banner {
-  .wrapper-for-buttons {
-    a {
-      background: #FFFFFF;
-      border-radius: 40px;
-      padding: 23px 47px;
-    }
+  .item {
+    background-image: url(../images/main-bannerjpg.jpg);
+    background-size: cover;
+    height: 100vh;
+    &.item_2 {
+        background-image: url(../images/banner-2-blue.jpg);
+        background-size: cover;
+        height: 100vh;
+      }
+    
+      &.item_3 {
+        background-image: url(../images/banner-three-white.jpg);
+        background-size: cover;
+        height: 100vh;
+      }
+    
+      &.item_4 {
+        background-image: url(../images/banner-4-beige.jpg);
+        background-size: cover;
+        height: 100vh;
+      }
   }
 
-  article {
-    margin-top: 280px;
-    p {
-      margin-bottom: 65px;
-    }
-  }
+ 
+
 }
+
+// .main-banner {
+//   .wrapper-for-buttons {
+//     a {
+//       background: #FFFFFF;
+//       border-radius: 40px;
+//       padding: 23px 47px;
+//     }
+//   }
+
+//   article {
+//     margin-top: 280px;
+
+//     p {
+//       margin-bottom: 65px;
+//     }
+//   }
+// }
