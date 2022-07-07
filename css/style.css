@@ -111,4 +111,15 @@ header .container .desctop-nav ul li :first-of-type {
   background-size: cover;
   height: 100vh;
 }
+
+.main-banner .content {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
 /*# sourceMappingURL=style.css.map */
